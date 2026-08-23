@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amber — フォアグラウンド サービスのデモ</title>
+<style>body{margin:0;background:#16120B;color:#F2E7D3;font-family:system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;padding:24px}video{max-width:360px;width:100%;border-radius:12px;background:#000}p{max-width:640px;line-height:1.7}</style></head>
+<body><h1 style="font-size:1.2rem">Amber — FOREGROUND_SERVICE_DATA_SYNC の使い方</h1>
+<video src="fgs-demo.mp4" controls playsinline></video>
+<p>「サイト全体」を選んで保存を始めると、複数ページの取得がフォアグラウンド サービス（dataSync）で走ります。ユーザーがアプリを離れても取得は続き、進捗画面で一時停止・再開・中止ができます。取得は robots.txt に従い、間隔を空け、上限（ページ数・容量）で止まります。</p>
+</body></html>

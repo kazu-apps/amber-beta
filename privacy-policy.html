@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — Amber</title>
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.75; color: #231C0E; background: #FDF6E9; }
+  h1 { font-size: 1.6rem; border-bottom: 2px solid #DCCBA6; padding-bottom: .4rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.2rem; color: #7A5310; }
+  h3 { font-size: 1.02rem; margin-top: 1.4rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #DCCBA6; padding: .5rem .6rem; text-align: left; vertical-align: top; }
+  th { background: #F5E9D3; }
+  code { background: #F5E9D3; padding: .1rem .35rem; border-radius: 4px; font-size: .92em; }
+  hr { border: 0; border-top: 1px solid #EFE2C7; margin: 2rem 0; }
+  a { color: #7A5310; }
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー — Amber</h1>
+<p>最終更新: 2026-08-23</p>
+<p>Amber（以下「本アプリ」）は、ウェブページを端末に保存してオフラインで閲覧するための Android アプリです。 開発・提供者は ks-apps（個人）です。</p>
+<p><strong>本アプリは、開発者のサーバーを持ちません。</strong> 保存したページも、設定も、購入の状態も、 すべてお使いの端末の中に置かれます。開発者がそれらを見ることはできません。</p>
+<hr>
+<h2>1. 取り扱う情報</h2>
+<h3>1.1 保存したウェブページ（端末内）</h3>
+<p>あなたが保存を指示したウェブページの本文・画像・スタイルシート・フォントなどの資材と、 その目録（元の URL・保存日時・タイトル・ファイル一覧）、検索用に抽出した本文のテキスト。</p>
+<ul>
+<li>保存先は本アプリ専用の領域（<code>Android/data/com.ksapps.amber/</code>）です</li>
+<li><strong>アプリをアンインストールすると消えます。</strong> 残したい場合は「すべて書き出す」で ZIP にしてください</li>
+<li>開発者のサーバーには送られません</li>
+</ul>
+<h3>1.2 設定（端末内）</h3>
+<p>保存の上限（ページ数・容量・取得の間隔）、テーマ、フォルダ、未読/既読、「更新あり」の印。 端末内の設定ストアにだけ保存されます。</p>
+<h3>1.3 購入の状態（端末内 + Google Play）</h3>
+<p>有料版（買い切り）を購入したかどうか。 本アプリは Google Play に所有を問い合わせ、その結果を端末内に記録します。 購入そのものの処理・決済情報の管理は Google Play が行い、<strong>本アプリはカード番号などの決済情報を受け取りません</strong>。</p>
+<h3>1.4 本アプリが収集しないもの</h3>
+<ul>
+<li>利用状況の分析（アナリティクス）は入れていません</li>
+<li>クラッシュレポートの自動送信はしていません</li>
+<li>広告 SDK は入れていません</li>
+<li>アカウント登録はありません</li>
+<li>連絡先・位置情報・カメラ・マイクには触れません</li>
+</ul>
+<hr>
+<h2>2. 通信</h2>
+<p>本アプリが通信するのは次の3つだけです。</p>
+<table><thead><tr><th>相手</th><th>いつ</th><th>内容</th></tr></thead><tbody>
+<tr><td>あなたが保存を指示したウェブサイト</td><td>保存するとき / 「更新を確認」を押したとき</td><td>そのページと、ページが参照する資材を取得します。内蔵ブラウザと同じ User-Agent と Cookie で取りに行きます</td></tr>
+<tr><td>同じウェブサイトの <code>robots.txt</code></td><td>サイトをたどって保存するとき</td><td>そのサイトが巡回を許しているかを確認します。<strong>許していない部分はたどりません</strong></td></tr>
+<tr><td>Google Play</td><td>起動時 / 購入時</td><td>有料版を所有しているかの確認と、購入の処理</td></tr>
+</tbody></table>
+<p>保存したページを<strong>閲覧するとき</strong>は通信しません。保存していない URL へのアクセスは遮断します。</p>
+<p>サイトをたどって保存するとき、本アプリは取得の間隔を空け（既定 0.5 秒、最短 0.2 秒）、 同時に1サイトしか巡回せず、上限（ページ数・容量）を超えたら止まります。 相手のサーバーに負荷をかけないための歯止めで、有料版でも外せません。</p>
+<hr>
+<h2>3. 利用する第三者サービス</h2>
+<h3>Google Play 課金サービス</h3>
+<p>有料版の購入と、所有の確認に使います。Google に送られる情報と Google の取り扱いは <a href="https://play.google.com/about/play-terms/">Google Play 利用規約</a> と <a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a> に従います。</p>
+<p>これ以外の第三者サービス（分析・広告・クラッシュ報告・クラウド同期）は使っていません。</p>
+<hr>
+<h2>4. 使用目的</h2>
+<p>1. あなたが指示したウェブページを保存し、オフラインで表示するため 2. 保存したページを検索・整理するため 3. 有料版の所有を確認するため</p>
+<hr>
+<h2>5. データの共有</h2>
+<p>開発者は、あなたのデータを第三者に提供・販売しません。そもそも開発者の手元にデータがありません。</p>
+<p>あなた自身が「書き出し」や「共有」で保存物を端末の外に出すことはできます。 それは本アプリの機能であり、出した先の取り扱いはあなたが選んだアプリやサービスに従います。</p>
+<hr>
+<h2>6. データの削除</h2>
+<ul>
+<li><strong>保存したページ</strong>: 一覧または閲覧画面の「削除」で1件ずつ消せます</li>
+<li><strong>すべて</strong>: アプリをアンインストールすると、保存したページ・設定・索引がすべて消えます</li>
+<li><strong>購入の記録</strong>: Google Play のアカウントに紐づいています。本アプリを消しても、</li>
+</ul>
+<p>Google Play 側の購入履歴は Google の規約に従って残ります</p>
+<p>開発者に削除を依頼する必要はありません。開発者側にデータが無いためです。</p>
+<hr>
+<h2>7. 保存期間</h2>
+<p>あなたが削除するか、アプリをアンインストールするまで、端末内に残ります。 開発者側での保存はありません。</p>
+<hr>
+<h2>8. 子供のプライバシー</h2>
+<p>本アプリは年齢を問わず使えますが、13歳未満の方から意図的に個人情報を収集することはありません （そもそも個人情報を収集する仕組みがありません）。</p>
+<hr>
+<h2>9. セキュリティ</h2>
+<ul>
+<li>保存物はアプリ専用領域に置かれ、他のアプリからは読めません</li>
+<li>購入の確認は Google Play の署名を端末内で照合します</li>
+<li>通信は HTTPS を優先しますが、保存対象のサイトが HTTP しか提供しない場合は HTTP で取得します</li>
+</ul>
+<p>（ブラウザと同じ挙動です）</p>
+<hr>
+<h2>10. 本ポリシーの変更</h2>
+<p>内容を変えるときは、この文書を更新し、最終更新日を改めます。 重要な変更があるときはアプリ内でもお知らせします。</p>
+<hr>
+<h2>11. お問い合わせ</h2>
+<p>ks-apps メール: admin@ks-apps.org</p>
+<p>権利侵害の申し立て（あなたが権利を持つコンテンツが本アプリの掲載物に使われている等）も 上記までご連絡ください。</p>
+</body>
+</html>
